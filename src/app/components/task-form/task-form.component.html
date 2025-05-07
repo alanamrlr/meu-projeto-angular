@@ -1,1 +1,12 @@
-<p>task-form works!</p>
+<div class="task-form">
+    <h2>Adicionar Nova Tarefa</h2>
+    <div class="form-group">
+        <input 
+        type="text"[(ngModel)]="newTaskTitle" 
+        placeholder="Digite uma nova tarefa"
+        class="form-control" 
+        (keyup.enter)="addTask()"
+        >
+        <button (click)="addTask()" class="btn-add">Adicionar</button>
+    </div>
+</div>
